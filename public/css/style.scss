@@ -1,0 +1,123 @@
+/* -------------------------------------- */
+/* --------------BASIC SETUP -------------*/
+/* -------------------------------------- */
+
+@font-face{
+	font-family:Helvetica;
+	src:url("../fonts/HelveticaNeueLight.ttf");
+}
+
+@font-face{
+	font-family:Futura;
+	src:url("../fonts/FuturaHeavyfont.ttf");
+}
+
+body{
+    margin: 0px;
+}
+
+/* -------------------------------------- */
+/* --------------REUSABLE -------------*/
+/* -------------------------------------- */
+
+h1,h2{
+    font-family:Futura;
+}
+
+p{
+    font-family:Helvetica;
+}
+
+.container{
+    width: 414px;
+    height: 721px;
+    background-color:rgb(105, 142, 142);
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    
+    .Header{
+        margin-top: 0px;
+        padding-top: 15px;
+    }
+    
+    .Button{
+        background-color:black;
+        color:white;
+        border:none;
+        padding:10px;
+        font-family:Helvetica;
+        transition:0.5s;
+    }
+    
+    .Button:hover{
+        background-color:white;
+        color:black;
+    }
+}
+
+
+/* -------------------------------------- */
+/* --------------LOGIN PAGE -------------*/
+/* -------------------------------------- */
+
+.Login-Page{
+    
+    
+    
+    .Button{
+        background-color:black;
+        color:white;
+        border:none;
+        padding:10px;
+        font-family:Helvetica;
+        transition:0.5s;
+    }
+    
+    .Button:hover{
+        background-color:white;
+        color:black;
+    }
+}
+
+/* -------------------------------------- */
+/* --------------TO-DO LIST -------------*/
+/* -------------------------------------- */
+
+.To-do-List{
+    
+//    display:block;
+    
+    
+    .list{
+        list-style: none;
+        width:458px;
+        height:487px;
+        overflow-y: auto;
+        margin:31px 0px 0px -84px;
+        
+        li{
+            
+        margin-bottom:40px;
+        margin-left:61px;
+            
+        
+        }
+    }
+    
+    .LogOutButton{
+        margin-bottom:10px;
+    }
+    
+    .AddContent{
+        margin-bottom:30px;
+    }
+}
+
+/* -------------------------------------- */
+/* --------------EDIT PAGE -------------*/
+/* -------------------------------------- */
+.Edit-Page{
+    
+    
+    
+}

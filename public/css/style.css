@@ -1,0 +1,95 @@
+/* -------------------------------------- */
+/* --------------BASIC SETUP -------------*/
+/* -------------------------------------- */
+@font-face {
+  font-family: Helvetica;
+  src: url("../fonts/HelveticaNeueLight.ttf"); }
+
+@font-face {
+  font-family: Futura;
+  src: url("../fonts/FuturaHeavyfont.ttf"); }
+
+/* line 15, public/css/style.scss */
+body {
+  margin: 0px; }
+
+/* -------------------------------------- */
+/* --------------REUSABLE -------------*/
+/* -------------------------------------- */
+/* line 23, public/css/style.scss */
+h1, h2 {
+  font-family: Futura; }
+
+/* line 27, public/css/style.scss */
+p {
+  font-family: Helvetica; }
+
+/* line 31, public/css/style.scss */
+.container {
+  width: 414px;
+  height: 721px;
+  background-color: #698e8e;
+  margin: 0px 0px 0px 0px;
+  text-align: center; }
+  /* line 38, public/css/style.scss */
+  .container .Header {
+    margin-top: 0px;
+    padding-top: 15px; }
+  /* line 43, public/css/style.scss */
+  .container .Button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-family: Helvetica;
+    transition: 0.5s; }
+  /* line 52, public/css/style.scss */
+  .container .Button:hover {
+    background-color: white;
+    color: black; }
+
+/* -------------------------------------- */
+/* --------------LOGIN PAGE -------------*/
+/* -------------------------------------- */
+/* line 67, public/css/style.scss */
+.Login-Page .Button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-family: Helvetica;
+  transition: 0.5s; }
+
+/* line 76, public/css/style.scss */
+.Login-Page .Button:hover {
+  background-color: white;
+  color: black; }
+
+/* -------------------------------------- */
+/* --------------TO-DO LIST -------------*/
+/* -------------------------------------- */
+/* line 91, public/css/style.scss */
+.To-do-List .list {
+  list-style: none;
+  width: 458px;
+  height: 487px;
+  overflow-y: auto;
+  margin: 31px 0px 0px -84px; }
+  /* line 98, public/css/style.scss */
+  .To-do-List .list li {
+    margin-bottom: 40px;
+    margin-left: 61px; }
+
+/* line 107, public/css/style.scss */
+.To-do-List .LogOutButton {
+  margin-bottom: 10px; }
+
+/* line 111, public/css/style.scss */
+.To-do-List .AddContent {
+  margin-bottom: 30px; }
+
+/* -------------------------------------- */
+/* --------------EDIT PAGE -------------*/
+/* -------------------------------------- */
+
+/*# sourceMappingURL=style.css.map */

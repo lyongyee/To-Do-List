@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+    <title>To Do List</title>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC4E_5gMPyOe-k69GTWB6d07K1JbKRPkuI",
+    authDomain: "to-do-list-ac167.firebaseapp.com",
+    databaseURL: "https://to-do-list-ac167.firebaseio.com",
+    projectId: "to-do-list-ac167",
+    storageBucket: "to-do-list-ac167.appspot.com",
+    messagingSenderId: "837936726046",
+    appId: "1:837936726046:web:42db0d32dd772b331c2e0f",
+    measurementId: "G-3L765JV0T9"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<script src="js/app.js" defer></script>
+
+<!--CSS links-->
+<link href="css/style.css" rel=stylesheet>
+    
+</head>
+<body>
+    
+    <div class="container">
+        <h1 id="UsersName" class="Header"></h1>
+        
+        <!-- Login Page -->
+        
+        <div id="LoginPage" class="Page Login-Page">
+            <div id="SignedOut">
+                <button id="SignInBtn" class="Button LoginButton">Sign In With Google</button>    
+            </div>
+        
+        </div>
+        
+        <!-- To-do List -->
+    <div id="ToDoList" class="Page To-do-List" hidden="true">
+            
+                <ul id="list" class="list">
+
+
+                </ul>
+        
+        <div class="AddContent">
+            <input type="text" id="AddContent">
+            <button id="AddBtn" class="Button AddButton">Add Task</button>
+        </div>
+        <button id="SignOutBtn" class="Button LogOutButton">Sign Out</button>
+        
+    </div>
+        
+        <!-- Edit Page -->
+        
+    <div id="EditPage" class="Page Edit-Page" hidden="true">
+        <h2>Editing Task</h2>
+        
+<!--        <form onSubmit=""-->
+        <input type="text" id="textbox">
+        
+        <button class="Button update" id="UpdateBtn">Update</button>
+        <button class="Button back" id="BackBtn" onclick="BackToList();">Back</button>
+        
+        <p id="ErrorMessage"></p>
+        
+        
+        
+    </div>
+    </div>
+    
+    
+
+</body>
+    
+    
+</html>
